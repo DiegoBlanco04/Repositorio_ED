@@ -15,5 +15,4 @@ public class Fenix extends Podemon{
 		this.enVuelo = enVuelo;
 	}
 	
-	
 }
