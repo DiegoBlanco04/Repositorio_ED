@@ -12,9 +12,9 @@ public class Metodos {
 	}
 	
 	public static void listar(ArrayList<Podemon> al) {
+		System.out.println("PODEMONS EXISTENTES:");
 		for (int i = 0; i < al.size(); i++) {
-			System.out.println("PODEMONS EXISTENTES:");
-			System.out.println("(" + i+1 + ")  -- " + al.get(i).getNombre());
+			System.out.println("(" + i + ")  -- " + al.get(i).getNombre());
 		}
 	}
 	

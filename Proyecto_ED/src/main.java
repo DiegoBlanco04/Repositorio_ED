@@ -2,45 +2,47 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class main {
-	ArrayList<Podemon> listaPodemon = new ArrayList<Podemon>();
+	public static ArrayList<Podemon> listaPodemon = new ArrayList<Podemon>();
 	public static void main(String[] args) {
 		int ini=0;
 		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Selecciona una opción");
 		menu();
-		while(ini!=6) {
-			
-			ini=sc.nextInt();
-			if(ini==1) {
-				System.out.println("1-Crear Podemon");
+		ini = sc.nextInt();
+		
+		do {
+			switch (ini) {
+			case 1: {
+				FrameCrear.main(args);
+			}
+			case 2: {
+				Metodos.listar(listaPodemon);
+			}
+			case 3: {
 
 			}
-			if(ini==2) {
-				System.out.println("2-Listar Podemones");
+			case 4: {
 
 			}
-			if(ini==3) {
-				System.out.println("3-Atacar");
+			case 5: {
 
 			}
-			if(ini==4) {
-				System.out.println("4-Volver a empezar");
+			case 6: {
 
 			}
-			if(ini==5) {
-				System.out.println("5-Guardar en fichero");
-
-			}
-			System.out.println("-----------------------");
-			menu();
-		}
+			default:
+				menu();
+				ini = sc.nextInt();			}
+		} while (ini != 0);
 	}
+
 	public static void menu() {
-		System.out.println("1-Crear Podemon");
-		System.out.println("2-Listar Podemones");
-		System.out.println("3-Atacar");
-		System.out.println("4-Volver a empezar");
-		System.out.println("5-Guardar en fichero");
-		System.out.println("6-Salir");
+
+		String[] op = {"1 - Crear Podemon","2 - Listar Podemones", "3 - Atacar", "4 - Volver a empezar", "5 - Guardar en Fichero", "6 - Salir"};
+		for (int i = 0; i < op.length; i++) {
+			System.out.println(op[i]);
+		}
 	}
 
 }

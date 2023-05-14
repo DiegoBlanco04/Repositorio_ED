@@ -35,5 +35,8 @@ public class Habilidad {
 		this.cont = cont;
 	}
 	
-	
+	public String toString() {
+		return nombre + " (" + danyo + ")";
+		
+	}
 }
