@@ -28,6 +28,8 @@ public class FrameCrear extends JFrame {
 	private JComboBox comboBox;
 	private JRadioButton rdbSireno;
 	private JRadioButton rdbFenix;
+	private JLabel lblDanyo;
+	private JTextField txtDanyo;
 
 	/**
 	 * Launch the application.
@@ -63,7 +65,7 @@ public class FrameCrear extends JFrame {
 		txtNombre.setColumns(10);
 		
 		txtVidaMax = new JTextField();
-		txtVidaMax.setBounds(201, 83, 143, 20);
+		txtVidaMax.setBounds(201, 69, 143, 20);
 		contentPane.add(txtVidaMax);
 		txtVidaMax.setColumns(10);
 		
@@ -72,7 +74,7 @@ public class FrameCrear extends JFrame {
 		contentPane.add(lblNombre);
 		
 		JLabel lblVida = new JLabel("VIDA MÁXIMA");
-		lblVida.setBounds(82, 86, 86, 14);
+		lblVida.setBounds(82, 66, 86, 14);
 		contentPane.add(lblVida);
 		
 		JLabel lblNHabilitad = new JLabel("HABILIDAD");
@@ -102,14 +104,15 @@ public class FrameCrear extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				String nom = txtNombre.getText();
 				int vida = Integer.parseInt(txtVidaMax.getText());
+				int danyo = Integer.parseInt(txtDanyo.getText());
 				Habilidad hab = (Habilidad) comboBox.getSelectedItem();
 				if (rdbFenix.isSelected()) {
-					Fenix fen = new Fenix(vida, vida, nom, hab, false);
+					Fenix fen = new Fenix(vida, vida, danyo, nom, hab, false);
 					main.listaPodemon.add(fen);
 					frame.dispose();
 				}
 				if (rdbSireno.isSelected()) {
-					Sireno sir = new Sireno(vida, vida, nom, hab);
+					Sireno sir = new Sireno(vida, vida, danyo, nom, hab);
 					main.listaPodemon.add(sir);
 					frame.dispose();
 				}
@@ -118,5 +121,14 @@ public class FrameCrear extends JFrame {
 		});
 		btnCrear.setBounds(224, 204, 89, 23);
 		contentPane.add(btnCrear);
+		
+		lblDanyo = new JLabel("DAÑO");
+		lblDanyo.setBounds(82, 101, 68, 14);
+		contentPane.add(lblDanyo);
+		
+		txtDanyo = new JTextField();
+		txtDanyo.setBounds(201, 100, 143, 20);
+		contentPane.add(txtDanyo);
+		txtDanyo.setColumns(10);
 	}
 }
