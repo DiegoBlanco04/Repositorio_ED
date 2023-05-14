@@ -103,16 +103,17 @@ public class FrameCrear extends JFrame {
 				String nom = txtNombre.getText();
 				int vida = Integer.parseInt(txtVidaMax.getText());
 				Habilidad hab = (Habilidad) comboBox.getSelectedItem();
+				if (rdbFenix.isSelected()) {
+					Fenix fen = new Fenix(vida, vida, nom, hab, false);
+					main.listaPodemon.add(fen);
+					frame.dispose();
+				}
 				if (rdbSireno.isSelected()) {
 					Sireno sir = new Sireno(vida, vida, nom, hab);
 					main.listaPodemon.add(sir);
 					frame.dispose();
 				}
-				if (rdbSireno.isSelected()) {
-					Fenix fen = new Fenix(vida, vida, nom, hab, false);
-					main.listaPodemon.add(fen);
-					frame.dispose();
-				}
+
 			}
 		});
 		btnCrear.setBounds(224, 204, 89, 23);
