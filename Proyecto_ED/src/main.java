@@ -9,6 +9,7 @@ public class main {
 		
 		System.out.println("Selecciona una opción");
 		menu();
+<<<<<<< Updated upstream
 		ini = sc.nextInt();
 		
 		do {
@@ -35,6 +36,39 @@ public class main {
 				menu();
 				ini = sc.nextInt();			}
 		} while (ini != 0);
+=======
+		while(ini!=6) {
+			
+			ini=sc.nextInt();
+			if(ini==1) {
+				System.out.println("1-Crear Podemon");
+				menu();
+
+
+			}
+			if(ini==2) {
+				System.out.println("2-Listar Podemones");
+				menu();
+
+			}
+			if(ini==3) {
+				System.out.println("3-Atacar");
+				menu();
+
+			}
+			if(ini==4) {
+				System.out.println("4-Volver a empezar");
+				menu();
+
+			}
+			if(ini==5) {
+				System.out.println("5-Guardar en fichero");
+				menu();
+
+			}
+			System.out.println("-----------------------");
+		}
+>>>>>>> Stashed changes
 	}
 
 	public static void menu() {
