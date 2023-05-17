@@ -11,7 +11,6 @@ public class main {
 		int op=-1;
 		Scanner sc = new Scanner(System.in);
 
-<<<<<<< Updated upstream
 		System.out.println("Selecciona una opción");
 		menu();
 		op = sc.nextInt();
@@ -38,9 +37,6 @@ public class main {
 		for (int i = 0; i < op.length; i++) {
 			System.out.println(op[i]);
 		}
-=======
-		
->>>>>>> Stashed changes
 	}
 
 	public static void partida() {

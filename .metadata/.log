@@ -551,7 +551,6 @@ org.xml.sax.SAXParseException; lineNumber: 3; columnNumber: 2; El contenido de l
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
-<<<<<<< Updated upstream
 !SESSION 2023-05-12 12:23:41.708 -----------------------------------------------
 eclipse.buildId=4.27.0.20230309-1200
 java.version=17.0.6
@@ -604,7 +603,6 @@ Binding(ALT+SHIFT+R,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
-<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 !SESSION 2023-05-14 09:24:59.635 -----------------------------------------------
 eclipse.buildId=4.27.0.20230309-1200
@@ -1100,53 +1098,6 @@ java.io.IOException: Stream closed
 	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:225)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 !SESSION 2023-05-15 12:19:26.403 -----------------------------------------------
-=======
-=======
-
-!ENTRY org.eclipse.core.jobs 4 2 2023-05-12 12:15:54.624
-!MESSAGE An internal error occurred during: "Periodic workspace save.".
-!STACK 0
-java.lang.NumberFormatException: Cannot parse null string
-	at java.base/java.lang.Integer.parseInt(Integer.java:630)
-	at java.base/java.lang.Integer.parseInt(Integer.java:786)
-	at org.eclipse.core.internal.resources.SaveManager.validateMasterTableBeforeSave(SaveManager.java:1615)
-	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1274)
-	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1265)
-	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1238)
-	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1149)
-	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.core.jobs 4 2 2023-05-12 12:23:33.831
-!MESSAGE An internal error occurred during: "Periodic workspace save.".
-!STACK 0
-java.lang.NumberFormatException: Cannot parse null string
-	at java.base/java.lang.Integer.parseInt(Integer.java:630)
-	at java.base/java.lang.Integer.parseInt(Integer.java:786)
-	at org.eclipse.core.internal.resources.SaveManager.validateMasterTableBeforeSave(SaveManager.java:1615)
-	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1274)
-	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1265)
-	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1238)
-	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1149)
-	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
->>>>>>> Stashed changes
-
-!ENTRY org.eclipse.core.jobs 4 2 2023-05-12 12:36:19.555
-!MESSAGE An internal error occurred during: "Periodic workspace save.".
-!STACK 0
-java.lang.NumberFormatException: Cannot parse null string
-	at java.base/java.lang.Integer.parseInt(Integer.java:630)
-	at java.base/java.lang.Integer.parseInt(Integer.java:786)
-	at org.eclipse.core.internal.resources.SaveManager.validateMasterTableBeforeSave(SaveManager.java:1615)
-	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1274)
-	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1265)
-	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1238)
-	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1149)
-	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-!SESSION 2023-05-17 09:01:29.117 -----------------------------------------------
->>>>>>> Stashed changes
 eclipse.buildId=4.27.0.20230309-1200
 java.version=17.0.6
 java.vendor=Eclipse Adoptium
@@ -1154,7 +1105,6 @@ BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_ES
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
 
-<<<<<<< Updated upstream
 !ENTRY ch.qos.logback.classic 1 0 2023-05-15 12:19:27.664
 !MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
 
@@ -1164,14 +1114,6 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp
 !ENTRY org.eclipse.core.resources 4 567 2023-05-15 12:19:35.048
 !MESSAGE Workspace restored, but some problems occurred.
 !SUBENTRY 1 org.eclipse.core.resources 4 567 2023-05-15 12:19:35.048
-=======
-!ENTRY ch.qos.logback.classic 1 0 2023-05-17 09:01:30.152
-!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
-
-!ENTRY org.eclipse.core.resources 4 567 2023-05-17 09:01:33.244
-!MESSAGE Workspace restored, but some problems occurred.
-!SUBENTRY 1 org.eclipse.core.resources 4 567 2023-05-17 09:01:33.245
->>>>>>> Stashed changes
 !MESSAGE Could not read metadata for '.org.eclipse.egit.core.cmp'.
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException(/.org.eclipse.egit.core.cmp)[567]: java.lang.Exception: The project description file (.project) for '.org.eclipse.egit.core.cmp' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
@@ -1226,11 +1168,7 @@ org.eclipse.core.internal.resources.ResourceException(/.org.eclipse.egit.core.cm
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
-<<<<<<< Updated upstream
 !SUBENTRY 2 org.eclipse.core.resources 4 567 2023-05-15 12:19:35.049
-=======
-!SUBENTRY 2 org.eclipse.core.resources 4 567 2023-05-17 09:01:33.247
->>>>>>> Stashed changes
 !MESSAGE The project description file (.project) for '.org.eclipse.egit.core.cmp' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
 !STACK 0
 java.lang.Exception: The project description file (.project) for '.org.eclipse.egit.core.cmp' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
@@ -1286,21 +1224,12 @@ java.lang.Exception: The project description file (.project) for '.org.eclipse.e
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
 
-<<<<<<< Updated upstream
 !ENTRY ch.qos.logback.classic 1 0 2023-05-15 12:19:35.487
 !MESSAGE Logback config file: /home/daw/Escritorio/PROYECTOED/workspace_ed/Repositorio_ED/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.1.100.20230106-1511.xml
 
 !ENTRY org.eclipse.jface 2 0 2023-05-15 12:19:36.950
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
 !SUBENTRY 1 org.eclipse.jface 2 0 2023-05-15 12:19:36.950
-=======
-!ENTRY ch.qos.logback.classic 1 0 2023-05-17 09:01:33.612
-!MESSAGE Logback config file: /home/distancia/Escritorio/ed_proyecto/workspace-ed/REPO_ED/Repositorio_ED/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.1.100.20230106-1511.xml
-
-!ENTRY org.eclipse.jface 2 0 2023-05-17 09:01:34.885
-!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2023-05-17 09:01:34.885
->>>>>>> Stashed changes
 !MESSAGE A conflict occurred for CTRL+SHIFT+T:
 Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
@@ -1318,11 +1247,7 @@ Binding(CTRL+SHIFT+T,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
-<<<<<<< Updated upstream
 !SUBENTRY 1 org.eclipse.jface 2 0 2023-05-15 12:19:36.950
-=======
-!SUBENTRY 1 org.eclipse.jface 2 0 2023-05-17 09:01:34.885
->>>>>>> Stashed changes
 !MESSAGE A conflict occurred for ALT+SHIFT+R:
 Binding(ALT+SHIFT+R,
 	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
@@ -1340,7 +1265,6 @@ Binding(ALT+SHIFT+R,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
-<<<<<<< Updated upstream
 
 !ENTRY org.eclipse.debug.core 4 125 2023-05-15 12:24:46.404
 !MESSAGE Error logged from Debug Core: 
@@ -2628,5 +2552,3 @@ java.io.IOException: Stream closed
 	at org.eclipse.debug.internal.core.OutputStreamMonitor.internalRead(OutputStreamMonitor.java:249)
 	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:225)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-=======
->>>>>>> Stashed changes

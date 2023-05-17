@@ -4,9 +4,5 @@
 <workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1683886303598_1" label="Java Test Sources" name="Java Test Sources"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1683886303803_2" label="Window Working Set" name="Aggregate for window 1683886144873"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1683887025083_3" label="Window Working Set" name="Aggregate for window 1683887025083"/>
-<<<<<<< Updated upstream
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1684049103694_4" label="Window Working Set" name="Aggregate for window 1684049103694"/>
-=======
-<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1684306895861_4" label="Window Working Set" name="Aggregate for window 1683886154654"/>
->>>>>>> Stashed changes
 </workingSetManager>
