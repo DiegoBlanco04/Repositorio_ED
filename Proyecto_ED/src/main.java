@@ -5,8 +5,8 @@ public class main {
 	public static ArrayList<Podemon> listaPodemon = new ArrayList<Podemon>();
 	public static void main(String[] args) {
 		
-		listaPodemon.add(new Sireno(20, 20, 5, "Gitano de Barrio", new Habilidad("Navajazo Violento", 10, 5)));
-		listaPodemon.add(new Sireno(20, 20, 5, "Gitano de Puerto", new Habilidad("Duchar", 15, 5)));
+		listaPodemon.add(new Sireno(30, 10, 3, "Gitano de Barrio", new Habilidad("Navajazo Violento", 10, 5)));
+		listaPodemon.add(new Sireno(10, 10, 10, "Gitano de Puerto", new Habilidad("Duchar", 15, 5)));
 		
 		int op=-1;
 		Scanner sc = new Scanner(System.in);
